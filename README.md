@@ -1,8 +1,27 @@
+# Nextjs tailwindcss starter
 
-Simple Next.js app boilerplate to start building quickly.
+## Install deps
 
-Stack : 
+Installing the dependencies
 
-Next.js
-Typescript
-Tailwindcss
+```bash
+yarn
+```
+
+## Debug locally
+
+```bash
+yarn dev
+```
+
+## Build
+
+```bash
+yarn build
+```
+
+## Built with
+
+- Next.js
+- Typescript
+- Tailwindcss
