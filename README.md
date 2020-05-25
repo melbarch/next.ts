@@ -25,3 +25,7 @@ yarn build
 - Next.js
 - Typescript
 - Tailwindcss
+
+## License
+
+MIT © [Mohamed EL BARCHANY](https://melbarch.com)
