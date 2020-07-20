@@ -1,12 +1,13 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import { ParsedUrlQuery } from 'querystring';
+import Link from 'next/link';
 
 const contentPath = {
-  path1: "content of dynamic route of 'path1'",
-  path2: "content of dynamic route of 'path2'",
+  path1: 'content of path1 to illustrate the mapping',
+  path2: 'another content here for the second path2',
 };
 
-const PostTemplate = ({
+const CustomPageTemplate = ({
   slug,
   content,
 }: {
@@ -15,8 +16,13 @@ const PostTemplate = ({
 }): JSX.Element => {
   return (
     <div className="text-center text-gray-700">
-      <span className="font-extrabold text-4xl">Page path : {slug}</span>
-      <p className="font-semibold text-3xl">{content}</p>
+      <span className="font-extrabold text-4xl">We are in : {slug}</span>
+      <p className="font-semibold text-3xl">
+        A dummy content for it : {content}
+      </p>
+      <Link href="/" as="/">
+        <a className="font-semibold text-3xl underline">Take me be back home</a>
+      </Link>
     </div>
   );
 };
@@ -52,4 +58,4 @@ export const getStaticProps: GetStaticProps = async ({
   return { props: { slug: `${params?.slug}`, content: postData } };
 };
 
-export default PostTemplate;
+export default CustomPageTemplate;
