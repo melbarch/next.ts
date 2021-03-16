@@ -3,7 +3,7 @@ import Link from 'next/link';
 const HomePage = (): JSX.Element => {
   return (
     <div className="text-center text-gray-700 block">
-      <div className="font-extrabold text-4xl">Hi there 🖐!</div>
+      <div className="font-extrabold text-2xl">Hi there 🖐!</div>
       {[
         { path: 'path1', p: 'a custom page to illustrate navigation' },
         { path: 'path2', p: 'another one!' },
